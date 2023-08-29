@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
-
+// --------------------WORKED ON------------------------------------
 router.get('/', async (req, res) => {
   // find all categories
  await Category.findAll({
@@ -51,5 +51,6 @@ router.delete('/:id', (req, res) => {
     res.json(data)
   })
 });
+// --------------------WORKED ON------------------------------------
 
 module.exports = router;
